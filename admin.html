@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+      nav {
+            background-color: pink;
+            color: aliceblue;
+            text-align: center;
+        }
+        
+        nav a {
+            display: inline-block;
+            padding: 10px;
+            text-decoration: none;
+            color: palevioletred;
+        }
+        
+        nav a:hover {
+            background-color: yellowgreen;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="checkbox"] {
+            margin: 10px 5px;
+        }
+
+        .cancelbtn {
+            background-color: #f44336;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cancelbtn:hover {
+            background-color: #ff0000;
+        }
+
+        .psw a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+            
+        <a href='/home.html'>Home</a>
+        <a href='/about.html'>About</a>
+        <a href='/product.html'>Products</a>
+        <a href='/admin.html'>Admin</a>
+        <a href='/contact.html'>Contacts</a>
+    </nav>
+    <form action="https://formspree.io/f/xgejrbbj"method="POST"
+       action="action_page.php" method="post" class="login-form">
+        <div class="imgcontainer">
+            <img src="https://i.postimg.cc/jSZVX8NJ/ad.jpg" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</body>
+</html>

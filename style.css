@@ -1,0 +1,27 @@
+body{
+    background-image: url(https://i.postimg.cc/PfvQQK9V/pig.png);
+background-size: cover;
+background-repeat: no-repeat
+}
+nav {
+    background-color: pink;
+    color: aliceblue;
+    text-align: center;
+}
+nav a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: palevioletred;
+}
+nav a:hover {
+    background-color:yellowgreen;}
+ nav li{
+        display: inline;
+        margin-right: 15px;
+    }
+   nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    
