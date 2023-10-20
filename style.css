@@ -41,3 +41,28 @@ nav a:hover {
     }
     
 }
+@keyframes slideLeftRight {
+    0% {
+        transform: translateX(0%); 
+    }
+    50% {
+        transform: translateX(-50%); 
+    }
+    100% {
+        transform: translateX(0%); 
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 300px; 
+    overflow: hidden;
+}
+
+#animated-image {
+    animation: slideLeftRight 8s linear infinite;
+}
+
+
